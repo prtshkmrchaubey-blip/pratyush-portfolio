@@ -33,3 +33,39 @@ footer{max-width:var(--max);margin:auto;display:flex;justify-content:space-betwe
 @media(max-width:650px){.navbar{padding:14px 18px}.menu-toggle{display:block}nav{display:none;position:absolute;top:62px;left:12px;right:12px;padding:12px;flex-direction:column;gap:0;background:#081625;border:1px solid var(--border);border-radius:10px}nav.open{display:flex}nav a{padding:11px 12px}.hero{padding:75px 20px 55px}.hero-visual{height:280px}.orbit-one{width:230px;height:145px}.orbit-two{width:275px;height:190px}.profile-core{width:145px;height:145px}.profile-core span{font-size:2.3rem}.chip-ai{right:0}.chip-react{right:10px}.chip-data{right:15px}.stats-bar{grid-template-columns:1fr 1fr;padding:0 20px 55px}.section{padding:75px 20px}.about-grid,.skills-grid,.projects-grid,.journey-grid{grid-template-columns:1fr}.project-main{min-height:auto}.education-card{align-items:flex-start}.education-badge{min-width:60px;height:60px}footer{padding:25px 20px;flex-direction:column}}
 
 .project-detail-hero{max-width:900px;padding-top:120px;padding-bottom:90px}.project-detail-hero h1{font-size:clamp(3rem,7vw,6rem)}.project-detail-hero .hero-text{max-width:760px}.project-detail-hero + .alt{border-top:1px solid var(--border)}
+
+/* Portfolio visual refresh */
+.hero{grid-template-columns:1.08fr .92fr;min-height:590px;align-items:center;overflow:hidden}
+.hero-content{position:relative;z-index:3}
+.hero h1{font-size:clamp(3rem,6vw,5.5rem);line-height:1.02;letter-spacing:-.045em;margin:12px 0 18px}
+.hero h1 span{background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-role{font-size:clamp(1.05rem,2vw,1.45rem);color:#cfe7ff;margin:0 0 22px;font-weight:700}
+.hero-role b{color:var(--blue);font-weight:500;margin:0 8px}
+.hero-social{display:flex;gap:10px;margin:20px 0}
+.hero-social a{border:1px solid var(--border2);background:rgba(7,20,38,.7);padding:9px 15px;border-radius:999px;color:#cfe7ff}
+.hero-social a:hover{border-color:var(--blue);color:var(--blue)}
+.hero-visual{min-height:500px}
+.profile-core{width:255px;height:255px;background:#071426;border:2px solid var(--blue);box-shadow:0 0 80px rgba(37,99,235,.28),inset 0 0 45px rgba(34,211,238,.12);z-index:2}
+.profile-photo img{width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block;filter:saturate(1.02) contrast(1.02)}
+.profile-photo small{z-index:4}
+.developer-quote{position:absolute;right:-5px;top:50%;transform:translateY(-50%);z-index:3;width:180px}
+.developer-quote strong{display:block;color:#eaf7ff;font-size:1.35rem;line-height:1.2;border-left:3px solid var(--blue);padding-left:14px;margin-bottom:18px}
+.developer-quote span{display:block;font-family:"JetBrains Mono";font-size:.67rem;line-height:1.6;color:#69bdf2;border:1px solid var(--border);background:rgba(5,11,20,.78);padding:13px;border-radius:10px}
+.stats-bar{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(4,12,23,.72)}
+.stats-bar div{min-height:95px}
+.stats-bar strong{font-size:2rem;color:var(--blue)}
+.stats-bar span{color:#b9d8f3}
+.quick-section{padding-top:35px}
+.quick-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:18px}
+.quick-card{background:linear-gradient(145deg,rgba(9,27,48,.95),rgba(5,16,30,.95));border:1px solid var(--border2);border-radius:16px;padding:24px;box-shadow:0 18px 45px rgba(0,0,0,.16)}
+.quick-card h3{font-size:1.35rem;margin:8px 0 18px}
+.mini-tags{display:flex;flex-wrap:wrap;gap:9px}
+.mini-tags span{border:1px solid #14538b;background:#071b31;border-radius:9px;padding:8px 11px;color:#d7ecff;font-size:.83rem}
+.timeline-mini{display:grid;gap:14px}
+.timeline-mini div{padding-left:15px;border-left:2px solid var(--blue)}
+.timeline-mini b,.timeline-mini span,.quick-info b,.quick-info span{display:block}
+.timeline-mini b,.quick-info b{color:#eef7ff;margin-bottom:3px}
+.timeline-mini span,.quick-info span{color:var(--muted);font-size:.9rem}
+.quick-info{display:grid;gap:15px}
+@media(max-width:1050px){.developer-quote{display:none}.hero{grid-template-columns:1fr 1fr}.quick-grid{grid-template-columns:1fr 1fr}.quick-card:first-child{grid-column:1/-1}}
+@media(max-width:650px){.hero{grid-template-columns:1fr;min-height:auto}.hero-visual{min-height:350px}.profile-core{width:205px;height:205px}.hero h1{font-size:3rem}.hero-role{font-size:1rem}.quick-grid{grid-template-columns:1fr}.quick-card:first-child{grid-column:auto}}

@@ -125,3 +125,18 @@ footer{max-width:var(--max);margin:auto;display:flex;justify-content:space-betwe
 .credential-featured{grid-column:1/-1;border-color:#24527d;background:linear-gradient(145deg,#102943,#0b192b)}
 .achievement-card{border-color:#345e7e}
 @media(max-width:700px){.credentials-grid{grid-template-columns:1fr}.credential-featured{grid-column:auto}}
+
+/* Student Developer / Builder hero additions */
+.hero-identity{display:inline-flex;align-items:center;gap:10px;font-family:"JetBrains Mono",monospace;font-size:.82rem;font-weight:700;letter-spacing:.18em;color:#6ee7b7;margin:8px 0 2px;text-transform:uppercase}
+.hero-identity span{color:var(--blue)}
+.builder-statement{font-size:clamp(1.7rem,3.2vw,2.8rem);line-height:1.08;letter-spacing:-.035em;margin:8px 0 20px;font-weight:800;color:var(--text)}
+.builder-statement span{color:#6ee7b7}
+.profile-ring{overflow:visible}
+.current-status{position:absolute;left:50%;bottom:-62px;transform:translateX(-50%);width:min(420px,92vw);display:flex;align-items:center;gap:12px;padding:13px 18px;border:1px solid var(--border2);border-radius:999px;background:rgba(5,11,20,.94);backdrop-filter:blur(12px);box-shadow:0 12px 35px rgba(0,0,0,.28);z-index:5;text-align:left}
+.status-dot{width:10px;height:10px;flex:0 0 10px;border-radius:50%;background:#6ee7b7;box-shadow:0 0 14px rgba(110,231,183,.7)}
+.current-status small{display:block;font-family:"JetBrains Mono";font-size:.58rem;letter-spacing:.14em;color:#6ee7b7}
+.current-status strong{display:block;font-size:.82rem;color:#e8f4ff;line-height:1.25}
+.current-status em{display:block;font-style:normal;font-size:.67rem;color:var(--muted);line-height:1.35;margin-top:2px}
+.simple-hero .hero-visual{padding-bottom:45px}
+@media(max-width:900px){.current-status{bottom:-55px}.builder-statement{margin-top:5px}}
+@media(max-width:650px){.hero-identity{font-size:.68rem;letter-spacing:.11em}.builder-statement{font-size:2rem}.current-status{bottom:-58px;width:calc(100vw - 40px);border-radius:16px;padding:11px 14px}.current-status strong{font-size:.76rem}.current-status em{font-size:.62rem}.simple-hero .hero-visual{padding-bottom:55px}}

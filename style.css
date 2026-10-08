@@ -140,3 +140,9 @@ footer{max-width:var(--max);margin:auto;display:flex;justify-content:space-betwe
 .simple-hero .hero-visual{padding-bottom:45px}
 @media(max-width:900px){.current-status{bottom:-78px}.builder-statement{margin-top:5px}}
 @media(max-width:650px){.current-status{bottom:-80px}.hero-identity{font-size:.68rem;letter-spacing:.11em}.builder-statement{font-size:2rem}.current-status{bottom:-82px;width:calc(100vw - 40px);border-radius:16px;padding:11px 14px}.current-status strong{font-size:.76rem}.current-status em{font-size:.62rem}.simple-hero .hero-visual{padding-bottom:55px}}
+
+/* Extra spacing below profile image */
+.current-status{bottom:-120px}
+.simple-hero .hero-visual{padding-bottom:80px}
+@media(max-width:900px){.current-status{bottom:-110px}.simple-hero .hero-visual{padding-bottom:75px}}
+@media(max-width:650px){.current-status{bottom:-105px}.simple-hero .hero-visual{padding-bottom:75px}}
